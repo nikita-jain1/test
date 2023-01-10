@@ -2,11 +2,9 @@
 
 /**
  * Fields Summary:
- * - fragrance [multiselect]
- * - brand [multiselect]
+ * - fragrance [select]
+ * - brand [select]
  * - bundle [select]
- * - price [slider]
- * - quantity [quantityValue]
  */
 
 return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
@@ -47,7 +45,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
          'children' => 
         array (
           0 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Multiselect::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Data\Select::__set_state(array(
              'name' => 'fragrance',
              'title' => 'Fragrance',
              'tooltip' => '',
@@ -58,7 +56,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'style' => '',
              'permissions' => NULL,
              'datatype' => 'data',
-             'fieldtype' => 'multiselect',
+             'fieldtype' => 'select',
              'relationType' => false,
              'invisible' => false,
              'visibleGridView' => false,
@@ -85,15 +83,15 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
               ),
             ),
              'width' => '',
-             'height' => '',
-             'maxItems' => NULL,
-             'renderType' => 'list',
+             'defaultValue' => '',
              'optionsProviderClass' => '',
              'optionsProviderData' => '',
+             'columnLength' => 190,
              'dynamicOptions' => false,
+             'defaultValueGenerator' => '',
           )),
           1 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Multiselect::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Data\Select::__set_state(array(
              'name' => 'brand',
              'title' => 'Brand',
              'tooltip' => '',
@@ -104,7 +102,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'style' => '',
              'permissions' => NULL,
              'datatype' => 'data',
-             'fieldtype' => 'multiselect',
+             'fieldtype' => 'select',
              'relationType' => false,
              'invisible' => false,
              'visibleGridView' => false,
@@ -129,14 +127,19 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
                 'key' => 'denver',
                 'value' => 'denver',
               ),
+              3 => 
+              array (
+                'key' => 'axe',
+                'value' => 'axe',
+              ),
             ),
              'width' => '',
-             'height' => '',
-             'maxItems' => NULL,
-             'renderType' => 'list',
+             'defaultValue' => '',
              'optionsProviderClass' => '',
              'optionsProviderData' => '',
+             'columnLength' => 190,
              'dynamicOptions' => false,
+             'defaultValueGenerator' => '',
           )),
           2 => 
           Pimcore\Model\DataObject\ClassDefinition\Data\Select::__set_state(array(
@@ -182,71 +185,6 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'optionsProviderData' => '',
              'columnLength' => 190,
              'dynamicOptions' => false,
-             'defaultValueGenerator' => '',
-          )),
-          3 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Slider::__set_state(array(
-             'name' => 'price',
-             'title' => 'Price',
-             'tooltip' => '',
-             'mandatory' => false,
-             'noteditable' => false,
-             'index' => false,
-             'locked' => false,
-             'style' => '',
-             'permissions' => NULL,
-             'datatype' => 'data',
-             'fieldtype' => 'slider',
-             'relationType' => false,
-             'invisible' => false,
-             'visibleGridView' => false,
-             'visibleSearch' => false,
-             'blockedVarsForExport' => 
-            array (
-            ),
-             'width' => '',
-             'height' => '',
-             'minValue' => NULL,
-             'maxValue' => NULL,
-             'vertical' => false,
-             'increment' => NULL,
-             'decimalPrecision' => NULL,
-          )),
-          4 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
-             'name' => 'quantity',
-             'title' => 'Quantity',
-             'tooltip' => '',
-             'mandatory' => false,
-             'noteditable' => false,
-             'index' => false,
-             'locked' => false,
-             'style' => '',
-             'permissions' => NULL,
-             'datatype' => 'data',
-             'fieldtype' => 'quantityValue',
-             'relationType' => false,
-             'invisible' => false,
-             'visibleGridView' => false,
-             'visibleSearch' => false,
-             'blockedVarsForExport' => 
-            array (
-            ),
-             'width' => '',
-             'unitWidth' => '',
-             'defaultValue' => NULL,
-             'defaultUnit' => NULL,
-             'validUnits' => 
-            array (
-            ),
-             'integer' => false,
-             'unsigned' => false,
-             'minValue' => 10,
-             'maxValue' => 400,
-             'unique' => false,
-             'decimalSize' => NULL,
-             'decimalPrecision' => NULL,
-             'autoConvert' => false,
              'defaultValueGenerator' => '',
           )),
         ),
